@@ -1,0 +1,310 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(background.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+#dealerHand {
+    height: 15%;
+    position: absolute;
+    top: 15%;
+    left: 45%;
+    width: 20%;
+    float: left;  
+}
+#yourHand {
+    position: absolute;
+    top: 42.5%;	
+    left: 50%;
+    width: 20%;
+    height: 15%;
+}
+#dealerCards {    
+    border-bottom: 4px solid black;
+    border-top: 4px solid black;
+    height: 130%;
+    transform: rotateX(50deg) rotate(1deg);
+}
+.card {
+    height: 170%;
+    width: 100px;
+    background: url(./cards/2_of_clubs.jpeg);
+    background-color: #fff;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    border: 2px solid black;  
+    margin: 0 0 0 46.5%;
+    transform: rotateX(60deg) rotate(.5deg);
+    float: left;
+}
+.newCard {
+    height: 16%;
+    width: 100px;
+    border-radius: 10px;    
+    border: 2px solid black; 
+    z-index: 1;
+    position: absolute;    
+    left: 85%;
+    top: 15%;
+    transform: rotateX(20deg) rotate(.5deg);
+    float: left;
+}
+#hit {
+    height: 100px;
+    width: 100px;
+    border: none;
+    outline: none;
+    background: transparent;
+    background: url(hit.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 82.5%;
+    left: 44%;
+    cursor: pointer;
+    display: none;    
+}
+#bet {
+    height: 100px;
+    width: 100px;
+    border: none;
+    outline: none;
+    background: transparent;
+    background: url(bet.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 82.5%;
+    left: 43%;
+    cursor: pointer;    
+}
+#stand {
+    height: 100px;
+    width: 100px;
+    border: none;
+    outline: none;
+    background: transparent;
+    background: url(stand.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 82.5%;
+    left: 51%;
+    cursor: pointer;
+    display: none;    
+}
+#rebet {
+	 height: 100px;
+    width: 100px;
+    border: none;
+    outline: none;
+    background: transparent;
+    background: url(rebet.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 82.5%;
+    left: 43%;
+    cursor: pointer;
+    display: none;  
+}
+#reset {
+    height: 100px;
+   width: 100px;
+   border: none;
+   outline: none;
+   background: transparent;
+   background: url(reset.png);
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   position: absolute;
+   top: 82.5%;
+   left: 53%;
+   cursor: pointer;
+   display: none;  
+}
+#betPrice {
+    position: absolute;
+    top: 62%;
+    left: 47.5%;
+    height: 150px;
+    width: 300px;   
+}
+#betPrice > div {
+    margin: 0 0 0 -15%;
+    transform: rotateX(30deg);
+}
+#allCoins {
+    position: absolute;
+    top: 91%;
+    left: 80%;
+}
+.coins {
+    float: left;
+    cursor: pointer;
+    height: 70px;
+    width: 70px;
+    border: none;
+    outline: none;
+}
+.coins:active {
+    transform: scale(.9)
+}
+#coin5 {
+    background: url(./coins/coin5.png);
+    background-size: 100% 100%;
+}
+#coin10 {
+    background: url(./coins/coin10.png);
+    background-size: 100% 100%;
+}
+#coin20 {
+    background: url(./coins/coin20.png);
+    background-size: 100% 100%;
+}
+#cash {
+    height: 20px;
+    width: 120px;
+    position: absolute;
+    top: 96.8%;
+    left: 40%;
+    float: left;
+    color: white;
+    font-size: 22px;
+}
+#yourBet {
+    position: absolute;
+    top: 96.8%;
+    left: 53%;
+    height: 20px;
+    width: 75px;
+    float: left;
+    color: white;
+    font-size: 22px;
+}
+#win {
+    position: absolute;
+    top: 96.7%;
+    left: 65%;
+    height: 20px;
+    width: 75px;
+    float: left;
+    color: white;
+    font-size: 22px;
+}
+.startCard {
+    position: absolute;
+    left: 85%;
+    top: 15%;
+    height: 15%;
+    width: 100px;
+    border-radius: 10px;    
+    border: 2px solid black; 
+}
+.dealerStartCard {
+    position: absolute;
+    left: 85%;
+    top: 15%;
+    height: 15%;
+    width: 100px;
+    border-radius: 10px;    
+    border: 2px solid black; 
+}
+#info {
+    height: 100px;
+    width: 200px;
+    border: 2px solid black;
+    position: absolute;
+    top: 30%;
+    left: 43.5%;
+    font-family: 'Bungee', cursive;
+    text-align: center;
+    font-size: 40px;
+    color: #ddd ;
+    background: linear-gradient(#6D4C41,#4E342E);
+    border-radius: 100%;
+    display: none;
+}
+#dealerPointsInfo {
+    text-align: center;
+    height: 20px;
+    width: 30px;
+    border: 1px solid black;
+    position: absolute;
+    top: 13%;
+    left: 42%;
+    background: #ddd;
+    display: none;
+    font-family: 'Krona One', sans-serif;
+}
+#playerPointsInfo {
+    text-align: center;
+    font-family: 'Krona One', sans-serif;
+    height: 20px;
+    width: 30px;
+    border: 1px solid black;
+    position: absolute;
+    top: 43%;
+    left: 42%;
+    background: #ddd;
+    display: none;
+}
+#rulesButton{
+    cursor: pointer;
+    height: 120px;
+    width: 120px;
+    background: url(./zasady.png);
+    background-size: 100% 100%;
+    position: absolute;
+    left: -71px;
+    top: 2.5%;
+    transition: .45s;
+}
+#refresh{
+    transition: .45s;
+    cursor: pointer;
+    height: 120px;
+    width: 120px;
+    background: url(./refresh.png);
+    background-size: 100% 100%;
+    position: absolute;
+    left: -71px;
+    top: 15%;
+}
+#exit{
+    cursor: pointer;
+    height: 120px;
+    width: 120px;
+    background: url(./exit.png);
+    background-size: 100% 100%;
+    position: absolute;
+    left: -71px;
+    top: 27.5%;
+    transition: .45s;
+}
+#rules {
+    z-index: 9999;
+    height: 70%;
+    width: 30%;
+    border: 13px double #FFC400;
+    background: linear-gradient(#616161,#424242);
+    position: absolute;
+    left: 35%;
+    top: 7.5%;    
+    display: none;
+}
+#logo {
+    height: 30%;
+    width: 100%;
+}
+#table {
+    padding: 5%;
+    margin: 2% 0 0 0;
+    font-family: 'Krona One', sans-serif;
+    font-size: 15px;
+    color: #ddd;
+    text-align: center;
+}

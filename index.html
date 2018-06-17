@@ -1,0 +1,63 @@
+<html>
+<head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src='app.js'></script>
+        <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Krona+One" rel="stylesheet">
+</head>
+<body>
+    <div id='rulesButton' class='menuButtons'></div>
+    <div id='refresh' onclick="location.reload()" class='menuButtons'></div>
+    <div id='exit' onclick="window.close()" class='menuButtons'></div>
+
+    <div id='rules'>
+        <img id='logo' src='black.png' />
+        <div id='table'>
+            <table >
+                <li>
+                    Głownym założeniem Blackjacka jest zdobycie większej ilości punktów niż krupier lecz nie większej niż 21 punktów.
+                </li><br>
+                <li>
+                    Każda karta ma określoną ilość punktów,<br> 2-10 równą liczbie na karcie
+                    , J,Q,K 10 a As 11.
+                </li> <br>
+                <li>
+                    Krupier musi dobrać gdy liczba jego punktów jest mniejsza niż 16 i pasuje gdy jest większa.
+                </li><br>
+                <li>
+                    Minimalny bet to 5 maxymalny 40.
+                </li> <br>
+                <li>
+                    Zdobycie liczby punktów większej niż 21 to tzw. Bust co oznacza przegraną.
+                </li> <br>
+                <br>
+                <lo style='font-size:25px'>
+                    MIŁEJ GRY!
+                </lo>
+            </table>
+        </div>
+    </div>
+
+    <div id='dealerPointsInfo'></div>
+    <div id='info'>BUST!</div>
+    <div id='playerPointsInfo'></div>
+    <div id='betPrice'></div>
+
+    <button id='bet'></button>
+    <button id='hit'></button>
+    <button id='stand'></button>
+    <button id='rebet'></button>
+    <button id='reset'></button>
+	
+    <div id='allCoins'>
+        <button class='coins' id='coin5'></button>
+        <button class='coins' id='coin10'></button>
+        <button class='coins' id='coin20'></button>
+    </div>
+
+    <div id='cash'></div>
+    <div id='yourBet'></div>
+    <div id='win'></div>
+</body>
+</html>
